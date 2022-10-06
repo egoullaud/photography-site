@@ -9,7 +9,6 @@ previews.forEach((preview) => {
     //dynamic change test and image
 
     const originalSrc = preview.getAttribute("data-original");
-    // console.log(originalSrc);
     original.src = `../img/${originalSrc}`;
   });
 });
