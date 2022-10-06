@@ -274,20 +274,43 @@ footer button a {
 }
 
 /* about-home section */
-.profile-pic-home img {
-  width: 75%;
-  height: 50%;
-  object-fit: contain;
-}
 
-.about-description {
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 5%;
   text-align: center;
 }
-.about-description p {
+.quote-container .quote p {
   line-height: 150%;
+  font-style: italic;
+  margin-bottom: 5%;
+}
+.quote-pic {
+  width: 100%;
+  padding: 0;
+  margin: 0 0 5% 0;
+}
+.quote-pic img {
+  width: 100%;
 }
 
+.about-home button {
+  background-color: #08101a;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+.about-home button a {
+  text-decoration: none;
+  color: white;
+  font-variant: small-caps;
+  font-size: 0.875rem;
+}
 /* gallery section  */
 .gallery-home-header {
   border-bottom: 2px solid white;
@@ -353,20 +376,6 @@ footer button a {
   color: black;
 }
 
-.about-home button {
-  background-color: #08101a;
-  outline: none;
-  border: none;
-  border-radius: 0.5rem;
-  padding: 0.5rem;
-  margin-top: 1rem;
-}
-.about-home button a {
-  text-decoration: none;
-  color: white;
-  font-variant: small-caps;
-  font-size: 0.875rem;
-}
 /* ABOUT PAGE */
 .about {
   width: 100%;
@@ -380,11 +389,15 @@ footer button a {
   gap: 1rem;
 }
 .about .profile-pic {
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.about .profile-pic img {
+  width: 50%;
+}
+
 .about-writeup {
   width: 100%;
 }
@@ -399,12 +412,6 @@ footer button a {
   padding-top: 1rem;
   line-height: 150%;
   text-align: center;
-}
-.about img {
-  width: 100%;
-  height: 80%;
-  object-fit: cover;
-  padding: 0;
 }
 
 .about-buttons button {
@@ -643,7 +650,7 @@ form label {
 /* form submit  */
 
 .submit-container {
-  background-color: #08101a;
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -655,7 +662,7 @@ form label {
 .submit {
   width: 100%;
   height: 100vh;
-  background-color: #213650;
+  background-color: #08101a;
   color: white;
   display: flex;
   flex-direction: column;
@@ -756,6 +763,10 @@ form label {
     padding: 0 5%;
     font-size: 1.5rem;
   }
+  .quote {
+    padding: 0 5%;
+    font-size: 1.5rem;
+  }
   .img-container h3 a {
     font-size: 1.5rem;
   }
@@ -763,9 +774,21 @@ form label {
     bottom: 20%;
     transform: translate(-50%, -20%);
   }
-  .about-description p {
-    font-size: 1.5rem;
+  .quote-container .quote p {
+    line-height: 150%;
+
+    margin-bottom: 5%;
+    font-size: 1.3rem;
   }
+  .quote-pic {
+    width: 100%;
+    padding: 0;
+    margin: 0 0 5% 0;
+  }
+  .quote-pic img {
+    width: 80%;
+  }
+
   .about-home button {
     padding: 1rem;
   }
@@ -785,7 +808,9 @@ form label {
   .videos iframe {
     width: 90%;
   }
-
+  .about .profile-pic img {
+    width: 80%;
+  }
   .contact-container {
     width: 100%;
     display: flex;
@@ -1043,6 +1068,7 @@ form label {
     padding-bottom: 5%;
   }
   .services-description p {
+    font-size: 1rem;
     line-height: 150%;
   }
   .services-description i {
@@ -1109,8 +1135,8 @@ form label {
     transform: translate(-50%, -40%);
   }
   .img-container .special {
-    bottom: 20%;
-    transform: translate(-50%, -20%);
+    bottom: 40%;
+    transform: translate(-50%, -40%);
   }
   .gallery-home .picture-grid .img-container:hover img {
     opacity: 0.2;
@@ -1125,6 +1151,15 @@ form label {
     text-decoration: none;
     font-size: 1.5rem;
     color: black;
+  }
+  .quote-pic img {
+    width: 70%;
+  }
+  .quote-pic {
+    width: 100%;
+  }
+  .quote p {
+    font-size: 1rem;
   }
   /* ABOUT PAGE */
   .about {
@@ -1145,6 +1180,10 @@ form label {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .about .profile-pic img {
+    width: 100%;
   }
   .about-writeup {
     width: 50%;
