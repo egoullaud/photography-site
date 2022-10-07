@@ -46,6 +46,7 @@ a {
   text-transform: uppercase;
   text-decoration: none;
   color: #363636;
+  font-size: 0.875rem;
 }
 a:hover {
   text-decoration: underline;
@@ -54,7 +55,7 @@ a:hover {
 }
 
 .content-link {
-  padding: 10% 0 5% 0;
+  padding: 10% 5% 5% 5%;
   text-align: center;
 }
 
@@ -172,18 +173,78 @@ footer .footer-content h4 {
   flex-direction: column;
   justify-content: center;
   height: 100%;
+  padding: 0;
 }
 .hero-container {
-  padding: 10% 5% 10% 5%;
+  padding: 10% 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .hero-container .quote p {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  padding: 0 5%;
   line-height: 200%;
   font-style: italic;
 }
 .hero-container .quote p span {
   font-style: normal;
+}
+.hero-img {
+  width: 100%;
+  height: 10%;
+  padding: 5% 0;
+}
+
+.hero-img img {
+  object-fit: cover;
+  height: 40vh;
+}
+
+/* services  */
+.front-page .content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.front-page .content-header {
+  text-align: center;
+  font-size: 1.5rem;
+  width: 100%;
+  border-bottom: 2px solid #363636;
+  padding: 5% 0;
+}
+.front-page .description-container {
+  padding-top: 10%;
+}
+.front-page .content-description {
+  padding: 5%;
+  text-align: center;
+}
+
+.front-page .content-description h5 {
+  font-size: 1rem;
+  text-align: center;
+  padding: 5% 0;
+}
+.front-page .content-container i {
+  font-size: 2rem;
+}
+.front-page .content-description p {
+  font-size: 0.875rem;
+}
+.front-page .content-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 2% 5% 10% 5%;
+}
+.front-page .content-link a {
+  padding-top: 5%;
 }
 
 /* gallery section  */
@@ -196,11 +257,12 @@ footer .footer-content h4 {
   padding-bottom: 5%;
 }
 .front-page .picture-grid {
+  border-top: 2px solid #363636;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   min-height: 50vh;
   grid-gap: 1rem;
-  padding: 5% 0;
+  padding: 5% 1rem 10% 1rem;
 }
 .front-page .picture-grid img {
   height: 100%;
@@ -239,31 +301,6 @@ footer .footer-content h4 {
   opacity: 1;
 }
 
-/* services  */
-.front-page .content-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.content-header {
-  text-align: center;
-  width: 100%;
-  border-bottom: 2px solid #363636;
-  margin: 10% 0 5% 0;
-}
-.content-description {
-  padding: 5%;
-  text-align: center;
-}
-.content-description h3 {
-  text-align: center;
-  padding: 5% 0;
-}
-.content-container i {
-  font-size: 2.5rem;
-}
-
 /* styles for contact and about pages */
 .content-page {
   width: 100%;
@@ -277,13 +314,23 @@ footer .footer-content h4 {
 }
 .content-page .about-header {
   text-align: center;
-  padding: 10% 0 5% 0;
+  padding: 5% 0;
 }
+.content-page .about-header h2 {
+  font-size: 2rem;
+}
+
 .content-page .content-container h2 {
   padding: 0 0 5% 0;
 }
 .content-page .content-container p {
   text-align: center;
+}
+.content-page .content-description {
+  padding: 5% 0;
+}
+.content-page .content-description p {
+  font-size: 0.875rem;
 }
 .content-page .content-container .profile-pic {
   display: flex;
@@ -295,7 +342,19 @@ footer .footer-content h4 {
   object-fit: fit;
   padding: 0;
 }
-
+.contact-container .content-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact-container .content-description h3 {
+  padding: 5% 0 0 0;
+}
+.contact-container .content-description p {
+  padding: 10% 5% 0 5%;
+  text-align: center;
+}
 /* styles for gallery pages*/
 .gallery-page {
   width: 100%;
@@ -336,15 +395,6 @@ footer .footer-content h4 {
 }
 
 /* contact form  */
-.content-description .contact-icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  font-size: 2rem;
-}
-.content-description .email-icon i {
-  font-size: 1rem;
-}
 .contact-container {
   width: 100%;
   display: flex;
@@ -357,6 +407,28 @@ footer .footer-content h4 {
 .contact-container .contact-header {
   padding-top: 20%;
 }
+.contact-container .content-description .contact-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+  font-size: 2rem;
+  padding: 5% 0 0 0;
+}
+.contact-container .content-description h3 {
+  text-align: center;
+}
+.contact-container .content-description .email-icon i {
+  font-size: 1rem;
+  padding: 5% 0 2% 2%;
+}
+.contact-container .content-description .email-icon {
+  width: 70%;
+}
+.contact-container .content-description .email-icon p {
+  padding: 5% 0;
+}
+
 form h3 {
   text-align: center;
   margin: 2%;
@@ -415,7 +487,7 @@ form :placeholder-shown {
     font-size: 2rem;
   }
   h5 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
   nav {
     display: flex;
@@ -438,7 +510,38 @@ form :placeholder-shown {
   .header-company {
     font-size: 1.5rem;
   }
-
+  .front-page .hero-container .quote p {
+    font-size: 1.5rem;
+  }
+  .front-page .content-link h3 {
+    font-size: 2rem;
+  }
+  .front-page .content-link a {
+    font-size: 1.5rem;
+  }
+  .hero-img img {
+    height: 60vh;
+  }
+  .content-link h3 {
+    font-size: 1.5rem;
+  }
+  .front-page .content-description p {
+    padding: 5%;
+    font-size: 1.2rem;
+  }
+  .front-page .content-container h2 {
+    font-size: 2.5rem;
+  }
+  .front-page .content-container .content-description h5 {
+    font-size: 2.2rem;
+    padding-bottom: 2%;
+  }
+  .front-page .content-description i {
+    font-size: 3.5rem;
+  }
+  .front-page .content-container .content-description p {
+    font-size: 1.5rem;
+  }
   .content-page .content-container .profile-pic img {
     width: 50%;
     height: 50%;
@@ -450,9 +553,13 @@ form :placeholder-shown {
     justify-content: center;
     font-size: 2rem;
   }
-
-  .content-description .contact-icons a {
+  .contact-container .content-description p {
+    padding: 5% 10%;
+    font-size: 1.2rem;
+  }
+  .contact-container .content-description .contact-icons a {
     margin: 0 5%;
+    padding: 5% 0;
   }
 
   .modal {
@@ -515,11 +622,60 @@ form :placeholder-shown {
   footer {
     flex-direction: row;
   }
+
+  .hero-img img {
+    object-fit: cover;
+    height: 70vh;
+    width: 100%;
+    padding: 0;
+  }
+  .front-page .content-link {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .content-link h3 {
+    padding: 0 0 2% 0;
+    font-size: 1.5rem;
+  }
+  .front-page .picture-grid {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
   .front-page .content-container {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .front-page .content-container .description-container {
+    width: 75%;
+    padding: 5% 0 0 0;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+  }
+
+  .front-page .content-container .content-header {
+    padding-bottom: 1rem;
+    font-size: 2rem;
+  }
+  .front-page .content-container .content-description h5 {
+    font-size: 1.5rem;
+  }
+  .front-page .content-description i {
+    font-size: 3rem;
+  }
+  .front-page .content-container .content-description p {
+    font-size: 1rem;
+    padding: 5% 10%;
+  }
+  .front-page .content-link a {
+    font-size: 1rem;
+  }
+
+  .front-page .contact-container .content-description .contact-icons {
+    width: 30%;
   }
   .content-page .about-header {
     padding: 2% 0 10% 0;
@@ -543,7 +699,24 @@ form :placeholder-shown {
     padding: 0;
   }
   .contact-container .contact-header {
+    width: 100%;
     padding-top: 30%;
+  }
+  .contact-container .content-description {
+    flex-direction: column;
+  }
+
+  .contact-container .content-description h3 {
+    font-size: 1.5rem;
+  }
+  .contact-container .content-description p {
+    font-size: 1rem;
+  }
+  .contact-container .content-description .contact-icons i {
+    font-size: 2rem;
+  }
+  .contact-container .content-description .contact-icons {
+    width: 30%;
   }
   .form button {
     width: 10%;
