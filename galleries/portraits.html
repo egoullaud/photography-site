@@ -4,75 +4,59 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../style.css" class="style css" />
-    <title>Portraits Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Raine Gauthier Photography</title>
   </head>
-  <body class="gallery-body">
+  <header>
+    <h1 class="header-name">Raine Gauthier</h1>
+    <h2 class="header-company">Photography</h2>
     <nav>
-      <div class="logo">
-        <a href="../index.html">
-          <img src="../img/hero/logo.png" alt="logo"
-        /></a>
-        <a href="../index.html"><h1>Raine Gauthier</h1></a>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
       </div>
-      <div class="dropdown">
-        <button><a href="../index.html" class="home">home</a></button>
-        <button><a href="../about.html" class="home">about</a></button>
-        <div class="projects">
-          <button>galleries</button>
-          <ul>
-            <li><a href="./events.html">events</a></li>
-            <li><a href="./nature.html">nature</a></li>
-            <li><a href="./portraits.html">portraits</a></li>
-            <li><a href="./light.html">light</a></li>
-            <li><a href="./architecture.html">architecture</a></li>
-          </ul>
-        </div>
-        <button>
-          <a href="../videos/video.html" class="home">videography</a>
-        </button>
-        <button><a href="../contact.html" class="home">contact</a></button>
-        <a id="#top"></a>
+      <div class="nav-links">
+        <a href="../index.html">overview</a>
+        <a href="../about.html">about</a>
+        <a href="./portraits.html">portraits</a>
+        <a href="./events.html">events</a>
+        <a href="./nature.html">nature</a>
+        <a href="./architecture.html">architecture</a>
+        <a href="./light.html">light</a>
+        <a href="../videos/video.html">videography</a>
+        <a href="../contact.html">contact</a>
       </div>
 
-      <svg
-        width="44"
-        height="18"
-        viewBox="0 0 44 18"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <line
-          class="line1"
-          y1="1"
-          x2="44"
-          y2="1"
-          stroke="white"
-          stroke-width="2"
-        />
-        <line
-          class="line2"
-          y1="9"
-          x2="27"
-          y2="9"
-          stroke="white"
-          stroke-width="2"
-        />
-        <line
-          class="line3"
-          y1="17"
-          x2="11"
-          y2="17"
-          stroke="white"
-          stroke-width="2"
-        />
-      </svg>
+      <a id="#top"></a>
     </nav>
-    <section class="picture-gallery">
-      <div class="gallery-title">
+  </header>
+  <body class="gallery-page">
+    <section class="gallery">
+      <div class="content-header">
         <h1>Portrait Gallery</h1>
       </div>
-      <div class="picture-grid">
+      <div class="gallery-grid">
         <div class="img-container">
           <img
             src="../img/portrait/preview/Portraits1-small.jpg"
@@ -505,7 +489,28 @@
       </div>
     </section>
     <footer>
-      <button><a href="#top">Back to Top</a></button>
+      <div class="footer-content">
+        <h4>Follow me</h4>
+        <div class="footer-links">
+          <a href="https://www.facebook.com/rainegphotography/" target="_blank">
+            <i class="fa-brands fa-facebook"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/rainegphotography/?hl=en"
+            target="_blank"
+          >
+            <i class="fa-brands fa-square-instagram"></i
+          ></a>
+        </div>
+      </div>
+      <div class="footer-content">
+        <h4><a href="#top">back to top</a></h4>
+        <p class="footer-p">Raine Gauther Photography</p>
+      </div>
+      <div class="footer-content">
+        <h4><a href="../contact.html">get in touch</a></h4>
+        <p class="footer-p">raineg@gmail.com</p>
+      </div>
     </footer>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"

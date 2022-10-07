@@ -4,75 +4,65 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../style.css" class="style css" />
-    <title>Videography</title>
-  </head>
-  <body class="gallery-body">
-    <nav>
-      <div class="logo">
-        <a href="../index.html">
-          <img src="../img/hero/logo.png" alt="logo"
-        /></a>
-        <a href="../index.html"><h1>Raine Gauthier</h1></a>
-      </div>
-      <div class="dropdown">
-        <button><a href="../index.html" class="home">home</a></button>
-        <button><a href="../about.html" class="home">about</a></button>
-        <div class="projects">
-          <button>galleries</button>
-          <ul>
-            <li><a href="../galleries/events.html">events</a></li>
-            <li><a href="../galleries/nature.html">nature</a></li>
-            <li><a href="../galleries/portraits.html">portraits</a></li>
-            <li><a href="../galleries/light.html">light</a></li>
-            <li><a href="../galleries/architecture.html">architecture</a></li>
-            >
-          </ul>
-        </div>
-        <button><a href="./video.html" class="home">videography</a></button>
-        <button><a href="../contact.html" class="home">contact</a></button>
-      </div>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
 
-      <svg
-        width="44"
-        height="18"
-        viewBox="0 0 44 18"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <line
-          class="line1"
-          y1="1"
-          x2="44"
-          y2="1"
-          stroke="white"
-          stroke-width="2"
-        />
-        <line
-          class="line2"
-          y1="9"
-          x2="27"
-          y2="9"
-          stroke="white"
-          stroke-width="2"
-        />
-        <line
-          class="line3"
-          y1="17"
-          x2="11"
-          y2="17"
-          stroke="white"
-          stroke-width="2"
-        />
-      </svg>
-    </nav>
-    <section class="videos">
-      <div class="video-description">
-        <h2>Videography</h2>
-        <h3></h3>
+    <title>Raine Gauthier Photography</title>
+  </head>
+  <header>
+    <h1 class="header-name">Raine Gauthier</h1>
+    <h2 class="header-company">Photography</h2>
+    <nav>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
       </div>
-      <div class="video-list">
-        <div class="video-container">
+      <div class="nav-links">
+        <a href="../index.html">overview</a>
+        <a href="../about.html">about</a>
+        <a href="../galleries/portraits.html">portraits</a>
+        <a href="../galleries/events.html">events</a>
+        <a href="../galleries/nature.html">nature</a>
+        <a href="../galleries/architecture.html">architecture</a>
+        <a href="../galleries/light.html">light</a>
+        <a href="./videos/video.html">videography</a>
+        <a href="../contact.html">contact</a>
+      </div>
+      <a id="#top"></a>
+    </nav>
+  </header>
+  <body class="gallery-page">
+    <section class="gallery">
+      <div class="content-header">
+        <h1>Videography</h1>
+        <p class="content-description">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. At maiores
+          itaque totam animi unde ex. Mollitia deserunt optio dicta
+          reprehenderit similique sequi ab quas dolores maiores rerum quaerat,
+          quam recusandae!
+        </p>
+      </div>
+      <div class="gallery-grid">
+        <div class="img-container">
           <iframe
             width="560"
             height="315"
@@ -82,8 +72,8 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
-          <div class="video-blurb">
-            <h3>Space to Grow</h3>
+          <div class="content-description">
+            <h5>Space to Grow</h5>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. At
               sapiente, facere laudantium magni quam perferendis sit illum quos
@@ -92,7 +82,7 @@
             </p>
           </div>
         </div>
-        <div class="video-container">
+        <div class="img-container">
           <iframe
             width="560"
             height="315"
@@ -102,8 +92,8 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
-          <div class="video-blurb">
-            <h3>Re-Wilding Vancouver: The Point Grey Foreshore</h3>
+          <div class="content-description">
+            <h5>Re-Wilding Vancouver: The Point Grey Foreshore</h5>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. At
               sapiente, facere laudantium magni quam perferendis sit illum quos
@@ -112,7 +102,7 @@
             </p>
           </div>
         </div>
-        <div class="video-container">
+        <div class="img-container">
           <iframe
             width="560"
             height="315"
@@ -122,8 +112,8 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
-          <div class="video-blurb">
-            <h3>EcoMUSICology and Vancouver's Bird Strategy</h3>
+          <div class="content-description">
+            <h5>EcoMUSICology and Vancouver's Bird Strategy</h5>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. At
               sapiente, facere laudantium magni quam perferendis sit illum quos
@@ -132,7 +122,7 @@
             </p>
           </div>
         </div>
-        <div class="video-container">
+        <div class="img-container">
           <iframe
             width="560"
             height="315"
@@ -145,8 +135,8 @@
             allowfullscreen
           ></iframe>
           <!-- !video not available check link once in domain -->
-          <div class="video-blurb">
-            <h3>Homeboy Histories</h3>
+          <div class="content-description">
+            <h5>Homeboy Histories</h5>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. At
               sapiente, facere laudantium magni quam perferendis sit illum quos
@@ -155,22 +145,18 @@
             </p>
           </div>
         </div>
-        <div class="video-container">
+        <div class="img-container">
           <iframe
             width="560"
             height="315"
-            src="
-            https://www.youtube.com/channel/UCALNX7N_Vc80Oz53qew_jSw/videos"
+            src="https://www.youtube.com/embed/UJs97UjISuc"
             title="YouTube video player"
             frameborder="0"
-            allow="accelerometer;
-            autoplay; clipboard-write; encrypted-media; gyroscope;
-            picture-in-picture"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
-          <!-- !choose one video to feature -->
-          <div class="video-blurb">
-            <h3>Vancouver Arts Colloquium Society Youtube Channel 2016-2018</h3>
+          <div class="content-description">
+            <h5>Vancouver Arts Colloquium Society Youtube Channel 2016-2018</h5>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. At
               sapiente, facere laudantium magni quam perferendis sit illum quos
@@ -182,7 +168,28 @@
       </div>
     </section>
     <footer>
-      <button><a href="#top">Back to Top</a></button>
+      <div class="footer-content">
+        <h4>Follow me</h4>
+        <div class="footer-links">
+          <a href="https://www.facebook.com/rainegphotography/" target="_blank">
+            <i class="fa-brands fa-facebook"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/rainegphotography/?hl=en"
+            target="_blank"
+          >
+            <i class="fa-brands fa-square-instagram"></i
+          ></a>
+        </div>
+      </div>
+      <div class="footer-content">
+        <h4><a href="#top">back to top</a></h4>
+        <p class="footer-p">Raine Gauther Photography</p>
+      </div>
+      <div class="footer-content">
+        <h4><a href="../contact.html">get in touch</a></h4>
+        <p class="footer-p">raineg@gmail.com</p>
+      </div>
     </footer>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"
