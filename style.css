@@ -310,7 +310,7 @@ footer .footer-content h4 {
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   min-height: 50vh;
   grid-gap: 1.5rem;
-  padding: 5% 0 10% 0;
+  padding: 5% 1.5rem 10% 1.5rem;
 }
 .picture-gallery .img-container img:hover {
   transform: scale(1.2);
@@ -325,39 +325,6 @@ footer .footer-content h4 {
   object-fit: cover;
   transition: all 0.3s ease-out;
   cursor: pointer;
-}
-
-.modal {
-  background: rgba(0, 0, 0, 0.9);
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  pointer-events: none;
-  transition: 0.25s ease-out;
-}
-
-.modal.open {
-  opacity: 1;
-  pointer-events: all;
-}
-
-.full-img {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0.5);
-  transition: all 0.25s ease-out;
-}
-.full-img.open {
-  width: 90%;
-  height: 90%;
-  object-fit: contain;
-  transform: translate(-50%, -50%) scale(1);
 }
 
 /* Videography gallery */
@@ -487,6 +454,39 @@ form :placeholder-shown {
   .content-description .contact-icons a {
     margin: 0 5%;
   }
+
+  .modal {
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.25s ease-out;
+  }
+
+  .modal.open {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .full-img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+    transition: all 0.25s ease-out;
+  }
+  .full-img.open {
+    width: 85%;
+    height: 85%;
+    object-fit: contain;
+    transform: translate(-50%, -50%) scale(1);
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -552,5 +552,37 @@ form :placeholder-shown {
   form textarea,
   form label {
     width: 30%;
+  }
+
+  .modal {
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.25s ease-out;
+  }
+  .modal.open {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .full-img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+    transition: all 0.25s ease-out;
+  }
+  .full-img.open {
+    width: 85%;
+    height: 85%;
+    object-fit: contain;
+    transform: translate(-50%, -50%) scale(1);
   }
 }
