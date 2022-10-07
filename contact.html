@@ -83,7 +83,12 @@
     </div>
 
         <div class="form">
-          <form>
+          <form action="https://formsubmit.co/raineg@gmail.com" method="POST">
+            <!-- honeypot -->
+            <input type="text" name="_honey" style="display:none;">
+
+            <!-- disable captcha  -->
+            <input type="hidden" name="_captcha" value="false">
             <h3>get in touch</h3>
             <input type="text" id="name" placeholder="Jane Doe" required />
             <input
