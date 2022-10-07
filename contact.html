@@ -83,13 +83,15 @@
     </div>
 
         <div class="form">
+          <h3>get in touch</h3>
           <form action="https://formsubmit.co/raineg@gmail.com" method="POST">
             <!-- honeypot -->
             <input type="text" name="_honey" style="display:none;">
 
             <!-- disable captcha  -->
             <input type="hidden" name="_captcha" value="false">
-            <h3>get in touch</h3>
+            <input type="hidden" name="_next" value="https://egoullaud.github.io/photography-site/form-submit.html">
+           
             <input type="text" id="name" placeholder="Jane Doe" required />
             <input
               type="email"
@@ -106,7 +108,7 @@
               required
             ></textarea>
             <button type="submit">
-              <a href="./form-submit.html">Let's Connect</a>
+              Let's Connect
             </button>
           </form>
         </div>
