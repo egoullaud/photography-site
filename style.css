@@ -387,6 +387,77 @@ footer .footer-content h4 {
   cursor: pointer;
 }
 
+.modal {
+  background: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.25s ease-out;
+  z-index: 1;
+  overflow: auto;
+}
+
+.modal.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.full-img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.5);
+  transition: all 0.25s ease-out;
+}
+.full-img.open {
+  width: 85%;
+  height: 85%;
+  object-fit: contain;
+  transform: translate(-50%, -50%) scale(1);
+}
+.close-modal {
+  position: absolute;
+  font-family: Arial, sans-serif;
+  top: 5%;
+  right: 5%;
+  color: #fff;
+  font-size: 40px;
+  transition: 0.3s;
+}
+.close-modal:hover,
+.close-modal:focus {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.modal-prev {
+  position: absolute;
+  font-family: Arial, sans-serif;
+  top: 45%;
+  left: 3%;
+  color: #fff;
+  font-size: 40px;
+  transition: 0.3s;
+}
+.modal-next {
+  position: absolute;
+  font-family: Arial, sans-serif;
+  top: 45%;
+  right: 3%;
+  color: #fff;
+  font-size: 40px;
+  transition: 0.3s;
+}
+.modal-prev:hover,
+.modal-next:hover {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
 /* Videography gallery */
 
 .img-container iframe {
@@ -562,39 +633,6 @@ form :placeholder-shown {
     margin: 0 5%;
     padding: 5% 0;
   }
-
-  .modal {
-    background: rgba(0, 0, 0, 0.9);
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    pointer-events: none;
-    transition: 0.25s ease-out;
-  }
-
-  .modal.open {
-    opacity: 1;
-    pointer-events: all;
-  }
-
-  .full-img {
-    position: absolute;
-    width: 100%;
-    height: auto;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.5);
-    transition: all 0.25s ease-out;
-  }
-  .full-img.open {
-    width: 85%;
-    height: 85%;
-    object-fit: contain;
-    transform: translate(-50%, -50%) scale(1);
-  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -728,31 +766,6 @@ form :placeholder-shown {
     width: 30%;
   }
 
-  .modal {
-    background: rgba(0, 0, 0, 0.9);
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    pointer-events: none;
-    transition: 0.25s ease-out;
-  }
-  .modal.open {
-    opacity: 1;
-    pointer-events: all;
-  }
-
-  .full-img {
-    position: absolute;
-    width: 100%;
-    height: auto;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.5);
-    transition: all 0.25s ease-out;
-  }
   .full-img.open {
     width: 85%;
     height: 85%;

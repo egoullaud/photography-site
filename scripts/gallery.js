@@ -14,9 +14,9 @@ previews.forEach((preview) => {
   });
 });
 
-modal.addEventListener("click", (e) => {
-  if (e.target.classList.contains("modal")) {
-    modal.classList.remove("open");
-    original.classList.remove("open");
-  }
+// document.querySelector(".modal-next");
+
+document.querySelector(".close-modal").addEventListener("click", (e) => {
+  modal.classList.remove("open");
+  original.classList.remove("open");
 });
