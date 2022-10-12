@@ -367,7 +367,7 @@ footer .footer-content h4 {
 }
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   min-height: 50vh;
   grid-gap: 1.5rem;
   padding: 5% 1.5rem 10% 1.5rem;
@@ -632,6 +632,9 @@ form :placeholder-shown {
   .contact-container .content-description .contact-icons a {
     margin: 0 5%;
     padding: 5% 0;
+  }
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   }
 }
 
