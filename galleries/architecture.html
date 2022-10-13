@@ -51,7 +51,7 @@
     </nav>
   </header>
   <body class="gallery-page">
-    <section class="gallery">
+    <div class="gallery">
       <div class="content-header">
         <h1>Architecture Gallery</h1>
       </div>
@@ -137,9 +137,9 @@
         </div>
         <div class="img-container">
           <img
-            src="../img/architecture/preview/arch12-small.jpg"
+            src="../img/architecture/preview/arch12-small.JPG"
             alt="bw bridge"
-            data-original="architecture/full/arch12-full.jpg"
+            data-original="architecture/full/arch12-full.JPG"
           />
         </div>
         <div class="img-container">
@@ -235,11 +235,15 @@
         </div>
       </div>
       <div class="modal">
-        <img
-          src="../img/architecture/full/arch1-full.JPG"
-          alt=""
-          class="full-img"
-        />
+        <div class="modal-content">
+          <span class="close-modal"><i class="fa-solid fa-xmark"></i></span>
+
+          <img
+            src="../img/architecture/full/arch1-full.JPG"
+            alt=""
+            class="full-img"
+          />
+        </div>
       </div>
     </section>
     <footer>
